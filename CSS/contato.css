@@ -1,0 +1,104 @@
+/* Configuração geral */
+body {
+    background-color: #2C2C2C;
+    color: white;
+    font-family: monospace;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background-color: #1F1F1F;
+    padding: 10px 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* Nome do portfólio */
+#Nome {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Ícones */
+.socials a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.socials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+}
+
+/* GitHub invertido */
+#git img {
+    filter: invert(100%);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    #Nome {
+        font-size: 20px;
+    }
+
+    .socials img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
